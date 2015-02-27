@@ -1340,6 +1340,10 @@ class ColumnListParameter( SelectToolParameter ):
         datasets = util.listify( referent )
         for dataset in datasets:
             if dataset:
+                # Check if metadata is available
+                if not hasattr(dataset, 'metadata'):
+                    return True
+
                 # Check if the dataset does not have the expected metadata for columns
                 if not dataset.metadata.columns:
                     # Only allow late validation if the dataset is not yet ready
