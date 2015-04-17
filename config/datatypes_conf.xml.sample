@@ -184,14 +184,14 @@
     <datatype extension="dbnsfp.tabular" type="galaxy.datatypes.tabular:Tabular" subclass="True" display_in_upload="True">
         <converter file="tabular_to_dbnsfp.xml" target_datatype="snpsiftdbnsfp"/>
     </datatype>
-    <datatype extension="sff" type="galaxy.datatypes.binary:Sff" mimetype="application/octet-stream" display_in_upload="true" description="A binary file in 'Standard Flowgram Format' with a '.sff' file extension." description_url="https://wiki.galaxyproject.org/Learn/Datatypes#Sff"/>
+    <datatype extension="sff" type="galaxy.datatypes.binary:Sff" mimetype="application/octet-stream" display_in_upload="true" description="A binary file in 'Standard Flowgram Format' with a '.sff' file extension." description_url="https://wiki.galaxyproject.org/Learn/Datatypes#Sff" edam="format_3284"/>
     <datatype extension="svg" type="galaxy.datatypes.images:Image" mimetype="image/svg+xml"/>
     <datatype extension="taxonomy" type="galaxy.datatypes.tabular:Taxonomy" display_in_upload="true"/>
-    <datatype extension="tabular" type="galaxy.datatypes.tabular:Tabular" display_in_upload="true" description="Any data in tab delimited format (tabular)." description_url="https://wiki.galaxyproject.org/Learn/Datatypes#Tabular_.28tab_delimited.29"/>
-    <datatype extension="twobit" type="galaxy.datatypes.binary:TwoBit" mimetype="application/octet-stream" display_in_upload="true"/>
+    <datatype extension="tabular" type="galaxy.datatypes.tabular:Tabular" display_in_upload="true" description="Any data in tab delimited format (tabular)." description_url="https://wiki.galaxyproject.org/Learn/Datatypes#Tabular_.28tab_delimited.29" edam="format_3475"/>
+    <datatype extension="twobit" type="galaxy.datatypes.binary:TwoBit" mimetype="application/octet-stream" display_in_upload="true" edam="format_3009"/>
     <datatype extension="sqlite" type="galaxy.datatypes.binary:SQlite" mimetype="application/octet-stream" display_in_upload="true"/>
     <datatype extension="gemini.sqlite" type="galaxy.datatypes.binary:GeminiSQLite" mimetype="application/octet-stream" display_in_upload="True" />
-    <datatype extension="txt" type="galaxy.datatypes.data:Text" display_in_upload="true" description="Any text file." description_url="https://wiki.galaxyproject.org/Learn/Datatypes#Plain_text"/>
+    <datatype extension="txt" type="galaxy.datatypes.data:Text" display_in_upload="true" description="Any text file." description_url="https://wiki.galaxyproject.org/Learn/Datatypes#Plain_text" edam="format_2330"/>
     <datatype extension="linecount" type="galaxy.datatypes.data:LineCount" display_in_upload="false"/>
     <datatype extension="memexml" type="galaxy.datatypes.xml:MEMEXml" mimetype="application/xml" display_in_upload="true"/>
     <datatype extension="cisml" type="galaxy.datatypes.xml:CisML" mimetype="application/xml" display_in_upload="true"/>
@@ -222,8 +222,8 @@
     </datatype>
     <!-- Phylogenetic tree datatypes -->
     <datatype extension="phyloxml" type="galaxy.datatypes.xml:Phyloxml" display_in_upload="true" />
-    <datatype extension="nhx" type="galaxy.datatypes.data:Newick" display_in_upload="true" />
-    <datatype extension="nex" type="galaxy.datatypes.data:Nexus" display_in_upload="true" />
+    <datatype extension="nhx" type="galaxy.datatypes.data:Newick" display_in_upload="true" edam="format_1910"/>
+    <datatype extension="nex" type="galaxy.datatypes.data:Nexus" display_in_upload="true" edam="format_1912"/>
     <!-- Start RGenetics Datatypes -->
     <datatype extension="affybatch" type="galaxy.datatypes.genetics:Affybatch" display_in_upload="true"/>
     <!-- eigenstrat pedigree input file -->
@@ -328,7 +328,7 @@
     <sniffer type="galaxy.datatypes.images:Pbm"/>
     <sniffer type="galaxy.datatypes.images:Pgm"/>
     <sniffer type="galaxy.datatypes.images:Xpm"/>
-    <sniffer type="galaxy.datatypes.images:Eps"/>
+    <sniffer type="galaxy.datatypes.images:Eps" edam="format_3466"/>
     <sniffer type="galaxy.datatypes.images:Rast"/>
     <!--
     Keep this commented until the sniff method in the assembly.py
